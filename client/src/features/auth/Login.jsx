@@ -35,8 +35,9 @@ function Login() {
       if (response.data.data?.role === "Admin") {
         navigate("/admin");
       }
-    } catch (e) {
-      message.error("Invalid credentials", e);
+    } catch (err) {
+      message.error("Invalid credentials! Please try again.");
+      console.error(err);
     }
   };
 
