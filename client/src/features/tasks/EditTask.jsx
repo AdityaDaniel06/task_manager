@@ -44,7 +44,6 @@ function EditTask() {
         status: taskData.status,
         completed: taskData.completed,
       });
-      message.success("Task Edited Successfully!");
     } catch (error) {
       console.error(error);
       message.error("Error fetching data", error.status);

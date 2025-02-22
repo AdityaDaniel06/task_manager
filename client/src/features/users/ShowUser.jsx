@@ -107,7 +107,7 @@ function ShowUser() {
                   <td className="p-4 text-left">
                     <button
                       onClick={() => showDeleteConfirm(user._id)}
-                      className="bg-red-500 text-white py-2 px-4 rounded-lg text-sm hover:bg-red-600 transition duration-200 focus:outline-none focus:ring-2 focus:ring-red-400"
+                      className="bg-red-500 text-white py-2 px-4 rounded-lg text-sm hover:bg-red-600 transition duration-200 focus:outline-none disabled:bg-slate-600 disabled:cursor-not-allowed focus:ring-2 focus:ring-red-400"
                       disabled={user.role === "Admin"}
                     >
                       Delete
